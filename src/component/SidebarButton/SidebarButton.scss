@@ -1,0 +1,94 @@
+.sidebar-button{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 13px 24px 11px 12px;
+	background: #252836;
+	border-radius: 12px 0px 0px 12px;
+	border: none;
+	background: transparent;
+	width: 100%;
+	outline: none;
+	transition: all ease-in-out .1s;
+	position: relative;
+	&::before{
+		content: '';
+		position: absolute;
+		top: -11px;
+		right: -1px;
+		margin: auto;
+		width: 12px;
+		height: 12px;
+		// background: #FFf;
+		background: url(../../assets/images/icon/button-before.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		transform: rotate(90deg);
+		display: none;
+	}
+
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: -11px;
+		right: -1px;
+		margin: auto;
+		width: 12px;
+		height: 12px;
+		background: url(../../assets/images/icon/button-before.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: none;
+	}
+	&:hover{
+		background: #252836;
+		&::after{
+			display: block;	
+		}
+
+		&::before{
+			display: block;
+		}
+		.fill-icon{
+			fill: #FFF;
+		}
+
+		.sidebar-button-icon{
+			background: #EA7C69;
+			box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+			border-radius: 8px;
+			width: 56px;
+		}
+		
+	}
+	&.active{
+
+		background: #252836;
+		&::after{
+			display: block;	
+		}
+
+		&::before{
+			display: block;
+		}
+		.fill-icon{
+			fill: #FFF;
+		}
+
+		.sidebar-button-icon{
+			background: #EA7C69;
+			box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+			border-radius: 8px;
+			width: 56px;
+		}
+	}
+	&-icon{
+		padding: 16px;
+		.fill-icon{
+			fill: #EA7C69;
+			transition: all ease-in-out .1s;
+		}
+		
+	}
+}

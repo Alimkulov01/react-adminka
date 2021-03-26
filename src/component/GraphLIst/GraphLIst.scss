@@ -1,0 +1,72 @@
+.graph-list{
+	display: flex;
+	align-items: center;
+	padding: 24px;
+	
+	overflow: scroll;
+	&-item{
+		display: flex;
+		align-items: center;
+		&__img{
+			width: 32px;
+			height: 32px;
+			object-fit: contain;
+			margin-right: 16px;
+		}
+
+		&__name{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 140%;
+			color: #E0E6E9;
+			width: 100px;
+			margin-right: 100px;
+		}
+
+		&__menu{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 140%;
+			width: 137px;
+			color: #E0E6E9;
+			margin-right: 100px;
+		}
+		&__payment{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 140%;
+			color: #E0E6E9;
+			margin-right: 175px;
+			width: 50px;
+		}
+		&-status{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 130%;
+			border-radius: 30px;
+			width: 91px;
+			height: 26px;
+			&.Completed{
+				color: #50D1AA;
+				background: rgba(107, 226, 190, 0.24);
+			}
+
+			&.Preparing{
+				color: #9290FE;
+				background: rgba(146, 144, 254, 0.2);
+			}
+
+			&.Pending{
+				color: #FFB572;
+				background: rgba(255, 181, 114, 0.2);
+			}
+		}
+	}
+}
